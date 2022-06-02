@@ -3,7 +3,9 @@
 ![JavaScript](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhackernoon.com%2Fhn-images%2F1*OF0xEMkWBv-69zvmNs6RDQ.gif&f=1&nofb=1)
 
 ## Lesson Overview
-In this lesson, we'll get an introduction to one of the most ***core*** and ***fundamental*** coding langauges, JavaScript. We'll practice implementing some JS code.  We'll discuss JS data types and their usage.
+In this lesson, we'll get an introduction to one of the most ***core*** and ***fundamental*** coding langauges, JavaScript. We'll practice implementing some JS code,  discuss JS data types and explain their usage.
+
+So take a deep breath, a nice sip of water, and lets get ready to learn something really amazing. 
 
 ## Objectives
   - Learn about what JavaScript is
@@ -17,6 +19,13 @@ In this lesson, we'll get an introduction to one of the most ***core*** and ***f
 **[Wikipedia](https://en.wikipedia.org/wiki/JavaScript)**: JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
 
 **[Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**: JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+
+As of 2022, Javascript is the only language that can work on both Front End / Client Side, and Back End / Server Side code. It can be used in conjunction with HTML and CSS to create user friendly, interactive webpages, and it can read and parse information for databases. Simply put, there is *a lot* that we will be using JS for.
+
+Like playing the piano, like working with paints, like practicing basketball, or learning anything else good, there is no limit to learning Javascript. As soon as you feel that you have "Mastered" it, there will be something new for you to learn. Through the next 12 weeks we will be showing you many different ways of working with Javascript, as well as giving you plenty of challenges and opportunities to build up your skills with this powerful and dynamic language. 
+
+Lets begin by explaining the different ways of working with data in Javascript
+
 
 ### JavaScript Data Types
 
@@ -45,7 +54,8 @@ In other languages, numbers are divided into two classes or objects:
    2.718, 3.14, .5, .25, etc
   ```
 
-All numbers in JavaScript are **"double-precision 64-bit format IEEE 754 values"** - read this as "There's really no such thing as an integer in JavaScript."
+All numbers in JavaScript are **"double-precision 64-bit format IEEE 754 values"** - read this as "There's really no such thing as an integer in JavaScript." And if that gives you a bit of a headache, that's alright. 
+
 
 ![Math](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FBmmfETghGOPrW%2Fgiphy.gif&f=1&nofb=1)
 
@@ -195,6 +205,12 @@ This is called **String Concatentation**.
 > Consider the following expressions. What do they output, and why?
 > `1 + 2 + '3'` vs `'1' + 2 + 3`
 
+
+
+Like our HTML elements and our CSS properties, you will not be expected to understand every single peice of JS functionality, and we do not want you to try to memorize every single thing by the end of the day (noticing a pattern here?). What is more important is knowing how to find the right resources to help guide you in whatever goal you wish to accomplish. 
+
+
+
 #### Converting Strings to Integers with parseInt() and parseFloat()
 
 You can convert a string to an integer using the built-in [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function. This takes the base for the conversion as an optional second argument, which you should always provide:
@@ -208,6 +224,11 @@ parseInt('010', 10);
 ```
 
 This will be important later when we're taking user input from the web and using it on our server or in our browser to do some type of numeric calculation.
+
+"1984", the famous book by George Orwell, is going to be read by our computer differently than the number 1984 would be. We can't do string methods on numbers, and we can't do mathematical functions with strings (with some exceptions). Understanding the differences between these data types, and their use cases, is going to be an integral part to building up your JS skills. 
+
+
+
 
 Similarly, you can parse floating point numbers using the built-in [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which uses base 10 always unlike its `parseInt()` cousin.
 
@@ -230,7 +251,9 @@ You can also use the unary `+` operator to convert values to numbers:
 Variables are used to store data types into the memory of the computer so that they can be referenced later.
 
 
-New variables in JavaScript are declared using the [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let "/en/JavaScript/Reference/Statements/var") or [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const "/en/JavaScript/Reference/Statements/var")` keywords.
+New variables in JavaScript are declared using the [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let "/en/JavaScript/Reference/Statements/var") or [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const "/en/JavaScript/Reference/Statements/var" keywords.
+
+You may have also seen the keyword "var" used. This is outdated in 2022: don't use it. If you run across any references or guides using "var" to declare a variable, there is a good chance that the guide is old, and may end up doing more harm than good if you have to refactor the code yourself. 
 
 If you declare a variable without assigning any value to it, its type is `undefined`.
 
@@ -295,7 +318,10 @@ In Javascript we just discussed two types of values we can use. We call these va
 
 ### let vs. const
 
-The difference between `let` and `const` are the with let, variables can be reassigned, wheras with const, they cannot.
+The difference between `let` and `const` are the with let, variables can be reassigned, wheras with const, they cannot. Const, however, has more power when working with different *Scope* in our projects. We'll discuss that more later today.
+
+
+
 Try:
 ```js
 let myNumber = 23;
@@ -320,6 +346,15 @@ const age = 33
 ```
 
 As you can see, string interpolation provides an easy way to inject variables or do basic math or logic functions dynamically.
+
+The alternative would be something like:
+
+```
+"My name is " + firstName + " and on my next birthday I will be " + age++ + " years old"
+
+``` 
+
+Which can get very confusing very quickly
 
 
 #### NaN
@@ -365,6 +400,10 @@ Boolean represents a logical entity and can have two values: `true`, and `false`
   - `null`
   - `undefined`
 
+
+
+
+
 ***All other values become true when converted to a Boolean***
 
 There is a simple way of verifying the truthiness or falsiness of a value. When you add `!` in front of a value, the returned value will be the inverse of the value in a boolean. So if you add two `!` then you'll get the boolean value of the original one:
@@ -391,6 +430,8 @@ There is a simple way of verifying the truthiness or falsiness of a value. When 
 !!""
 //=> false
 ```
+
+All strings that have some content are regarded as as Truthy. So even if they are not "True", like for example saying "5 < 4" or "choclolate ice cream < strawberry ice cream", they will still be regarded as Truthy. This is one reason that practicing and understanding vocabulary is going to be so important for these lessons. 
 
 #### Boolean/Logical Operators
 
