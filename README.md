@@ -22,7 +22,7 @@ So take a deep breath, a nice sip of water, and lets get ready to learn somethin
 
 As of 2022, Javascript is the only language that can work on both Front End / Client Side, and Back End / Server Side code. It can be used in conjunction with HTML and CSS to create user friendly, interactive webpages, and it can read and parse information for databases with Mongoose, Express, and Sequelize later on in the course. Simply put, there is *a lot* that we will be using JS for.
 
-Like playing the piano, painting with oils or learning anything else good, there is no limit to learning Javascript. As soon as you feel that you have "Mastered" it, there will be something new for you to learn. Through the next 12 weeks we will be showing you many different ways of working with Javascript, as well as giving you plenty of challenges and opportunities to build up your skills with this powerful and dynamic language. 
+Like playing the piano, painting with oils, or studying anything else worthwhile, there is no limit to learning Javascript. As soon as you feel that you have "Mastered" it, there will be something new for you to learn. Through the next 12 weeks we will be showing you many different ways of working with Javascript, as well as giving you plenty of challenges and opportunities to build up your skills with this powerful and dynamic language. 
 
 
 **We do not expect you to to be the Michael Jordan of Javascript in the next 24 hours. We *do* expect you to dedicate time each day to practicing, and to take note of how you are progressing with each new thing that we learn!**
