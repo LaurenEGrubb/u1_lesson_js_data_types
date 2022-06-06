@@ -22,8 +22,6 @@ So take a deep breath, a nice sip of water, and lets get ready to learn somethin
 
 As of 2022, Javascript is the only language that can work on both Front End / Client Side, and Back End / Server Side code. It can be used in conjunction with HTML and CSS to create user friendly, interactive webpages, and it can read and parse information for databases with Mongoose, Express, and Sequelize later on in the course. Simply put, there is *a lot* that we will be using JS for.
 
-Like playing the piano, painting with oils, or studying anything else worthwhile, there is no limit to learning Javascript. As soon as you feel that you have "Mastered" it, there will be something new for you to learn. Through the next 12 weeks we will be showing you many different ways of working with Javascript, as well as giving you plenty of challenges and opportunities to build up your skills with this powerful and dynamic language. 
-
 
 **We do not expect you to to be the Michael Jordan of Javascript in the next 24 hours. We *do* expect you to dedicate time each day to practicing, and to take note of how you are progressing with each new thing that we learn!**
 
@@ -210,9 +208,6 @@ This is called **String Concatentation**.
 
 
 
-Like our HTML elements and our CSS properties, you will not be expected to understand every single peice of JS functionality, and we do not want you to try to memorize every single thing by the end of the day (noticing a pattern here?). What is more important is knowing how to find the right resources to help guide you in whatever goal you wish to accomplish. 
-
-
 
 #### Converting Strings to Integers with parseInt() and parseFloat()
 
@@ -227,9 +222,6 @@ parseInt('010', 10);
 ```
 
 This will be important later when we're taking user input from the web and using it on our server or in our browser to do some type of numeric calculation.
-
-"1984", the famous book by George Orwell, is going to be read by our computer differently than the number 1984 would be. We can't do string methods on numbers, and we can't do mathematical functions with strings (with some exceptions). Understanding the differences between these data types, and their use cases, is going to be an integral part to building up your JS skills. 
-
 
 
 
@@ -434,7 +426,7 @@ There is a simple way of verifying the truthiness or falsiness of a value. When 
 //=> false
 ```
 
-All strings that have some content are regarded as as Truthy. So even if they are not "True", like for example saying "5 < 4" or "choclolate ice cream < strawberry ice cream", they will still be regarded as Truthy. This is one reason that practicing and understanding vocabulary is going to be so important for these lessons. 
+All strings that have some content are regarded as as Truthy. So even if they are not "True", like for example saying "5 < 4" would still be regarded as Truthy. This is one reason that practicing and understanding vocabulary is going to be so important for these lessons. 
 
 #### Boolean/Logical Operators
 
